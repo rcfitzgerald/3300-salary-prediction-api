@@ -8,7 +8,7 @@ The API is not a complete implementation. It does not account for error handling
 
 The idea for this project came from [Predicting Year of Marriage - End to End Machine Learning Deployment with FLASK and AWS -PART 1](https://www.youtube.com/watch?v=sm5xeKal72I). I adapted to a data science salary prediction model and Microsoft Azure for purposes of teaching.
 
-## To Run This Application  
+## To Run This Application
 
 1. Clone this repository to local computer
 
@@ -38,7 +38,7 @@ The idea for this project came from [Predicting Year of Marriage - End to End Ma
 Send a GET request to the root route to learn about the api
 
 **/predict**  
-Send a POST request with JSON data to the /predict route to recieve back a salary prediction in JSON format {"predicted\_salary": 00000.00}. Required data includes labels for categorical variables _age, gender, country, highest_deg, coding_exp, title_, and _company\_size_. Data must be sent in this order.
+Send a POST request with JSON data to the /predict route to recieve back a salary prediction in JSON format {"predicted_salary": 00000.00}. Required data includes labels for categorical variables _age, gender, country, highest_deg, coding_exp, title_, and _company_size_. Data must be sent in this order.
 
 ### Example JSON
 
@@ -53,17 +53,13 @@ Send a POST request with JSON data to the /predict route to recieve back a salar
   "company_size": 2
 }
 ```
-  
-    
+
 ## To Do List
 
-[ ] :pencil2:  Add error handling  
-[ ] :pencil2:  Add application logging    
-[ ] :pencil2:  Add /api/v1 url path  
+[ ] :pencil2: Add error handling  
+[ ] :pencil2: Add application logging  
+[ ] :pencil2: Add /api/v1 url path
 
-
-
-  
 ## Categorical variable mappings
 
 **_age mapping_**  
@@ -87,7 +83,7 @@ Send a POST request with JSON data to the /predict route to recieve back a salar
 **_company_size mapping_**  
 {0: '0-49 employees', 1: '10,000 or more employees', 2: '1000-9,999 employees', 3: '250-999 employees', 4: '50-249 employees'}
 
-## Sample data  
+## Sample data
 
 If using mc_salary_predict_model.ml, with the variables 7, 0, 55, 3, 4, 13, and 2 should return a predicted salary of 95679.58.
 
